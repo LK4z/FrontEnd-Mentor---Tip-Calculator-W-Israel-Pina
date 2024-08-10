@@ -48,7 +48,7 @@ body {
 }
 
 .bill-input-container:focus-within {
-    border: 1px solid hsl(172, 67%, 45%);
+    border: 2px solid hsl(172, 67%, 45%);
 }
 
 .bill-input {
@@ -71,7 +71,6 @@ body {
 }
 
 .select-tip {
-    background-color: blue;
     margin-left: 15px;
 }
 
@@ -83,38 +82,44 @@ body {
     padding: 10px;
 }
 
-.botao-5 {
+.botao-5, .botao-10, .botao-15, .botao-25, .botao-50 {
     height: 50px;
     width: 100px;
-}
-
-.botao-10 {
-    height: 50px;
-    width: 100px;
-}
-
-.botao-15 {
-    height: 50px;
-    width: 100px;
-}
-
-.botao-25 {
-    height: 50px;
-    width: 100px;
-}
-
-.botao-50 {
-    height: 50px;
-    width: 100px;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .botao-custom {
     height: 50px;
     width: 100px;
     margin-top: 10px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    text-align: center;
 }
 
+.botao-custom::placeholder {
+    color: #000000;
+    font-size: 24px;
+}
 
+.botao-custom:focus {
+outline: solid 2px hsl(172, 67%, 45%);
+}
+
+.numero-pessoas {
+    margin-left: 15px;
+}
+
+/* .numero-pessoas-input-container {
+
+} */
 
 
 
