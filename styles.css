@@ -82,7 +82,11 @@ body {
     padding: 10px;
 }
 
-.botao-5, .botao-10, .botao-15, .botao-25, .botao-50 {
+.botao-5,
+.botao-10,
+.botao-15,
+.botao-25,
+.botao-50 {
     height: 50px;
     width: 100px;
     background-color: hsl(183, 100%, 15%);
@@ -102,6 +106,7 @@ body {
     border-radius: 5px;
     color: #000000;
     text-align: center;
+    font-size: 24px;
 }
 
 .botao-custom::placeholder {
@@ -110,24 +115,119 @@ body {
 }
 
 .botao-custom:focus {
-outline: solid 2px hsl(172, 67%, 45%);
+    outline: solid 2px hsl(172, 67%, 45%);
 }
 
 .numero-pessoas {
     margin-left: 15px;
 }
 
-/* .numero-pessoas-input-container {
+.numero-pessoas h2 {
+    margin-bottom: 10px;
+}
 
-} */
+.numero-pessoas-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    border: none;
+}
+
+.numero-pessoas-input-container:focus-within {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.numero-pessoas-input {
+    height: 45px;
+    width: 310px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+.numero-pessoas-input::placeholder {
+    font-size: 20px;
+    text-align: right;
+}
+
+.info-resultado {
+    background-color: hsl(183, 100%, 15%);
+    width: 40%;
+    height: 400px;
+    margin: auto 50px auto 0px;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.tip-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin: 20px 0px;
+}
+
+.tip-amount h2 {
+    font-size: 40px;
+    color: hsl(172, 67%, 45%);
+
+}
+
+.translucido {
+    color: #ffffff93;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin: 50px 0px 20px 0px;
+}
+
+.total h2 {
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
+}
+
+.reset-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    padding-top: 80px;
+}
+
+.reset-button {
+    border: none;
+    width: 93%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color:  hsl(172, 67%, 45%);
+}
+
+.reset-button:hover {
+    cursor: pointer;
+}
 
 
 
 
-/* .attribution {
+.attribution {
     text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
 }
 
 .attribution a {
     color: rgb(0, 191, 255);
-} */
+}
